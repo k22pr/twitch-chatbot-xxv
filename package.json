@@ -1,0 +1,32 @@
+{
+  "name": "twitch-chatbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "async-redis": "^1.1.4",
+    "axios": "^0.18.0",
+    "date-diff": "^0.2.1",
+    "dateformat": "^3.0.3",
+    "hashset": "^0.0.6",
+    "redis": "^2.8.0",
+    "string-width": "^2.1.1",
+    "tmi.js": "^1.2.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "nodemon": "^1.18.4",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "babel-node": "babel-node --extensions \".ts,.tsx\"",
+    "start": "nodemon --exec yarn run babel-node -- ./src/index.ts",
+    "build": "babel src --out-dir lib --extensions \".ts,.tsx\""
+  }
+}

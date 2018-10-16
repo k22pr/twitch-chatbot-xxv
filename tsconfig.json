@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "target": "es2015",
+    "module": "commonjs",
+    "sourceMap": false,
+    "noImplicitAny": false
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
