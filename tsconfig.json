@@ -5,7 +5,8 @@
     "target": "es2015",
     "module": "commonjs",
     "sourceMap": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "types": ["@types/webrtc"]
   },
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

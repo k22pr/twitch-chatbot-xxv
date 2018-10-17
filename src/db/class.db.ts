@@ -1,6 +1,7 @@
 import redis from "redis";
 import dateFormat from "dateformat";
-import asyncRedis from "async-redis";
+declare function require(name: string);
+var asyncRedis = require("async-redis");
 import ChatData from "../class/chat/class.chatData";
 
 class db {
